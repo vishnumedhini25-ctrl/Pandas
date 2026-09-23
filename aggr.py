@@ -13,3 +13,14 @@ print(df.sum(numeric_only=True))
 print(df.count())
 
 print(df["petal.width"].mean())
+
+print(df["petal.width"].min())
+
+print(df["petal.width"].sum())
+
+group = df.groupby("variety")
+print(group)
+
+print(group.mean(numeric_only=True))
+
+print(group["sepal.length"].mean())
